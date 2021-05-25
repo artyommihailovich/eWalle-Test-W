@@ -41,7 +41,7 @@ final class MenuTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         backgroundColor = .clear
-        selectedBackgroundView?.backgroundColor = .clear
+        selectedBackgroundView?.alpha = 0
     }
     
     private func setupSubview() {

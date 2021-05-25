@@ -152,7 +152,7 @@ final class MenuViewController: UIViewController {
         }
         
         tableView.snp.makeConstraints {
-            $0.bottom.equalTo(logoutButton.snp.top).offset(-80)
+            $0.bottom.equalTo(logoutButton.snp.top)
             $0.left.equalToSuperview()
             $0.top.equalTo(viewWithStack.snp.bottom).offset(60)
             $0.width.equalTo(200)
