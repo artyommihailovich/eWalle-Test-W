@@ -35,7 +35,7 @@ final class BodyView: UIView {
         $0.text = viewModel.descriptionText
         $0.numberOfLines = 6
         $0.font = .with(weight: .regular, size: .text)
-        $0.textColor = .grayCustom
+        $0.textColor = .purpleText
     }
     
     private lazy var bodyStackView = UIStackView().do {

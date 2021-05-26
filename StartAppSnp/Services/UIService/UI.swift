@@ -34,7 +34,7 @@ struct UI {
     }
     
     struct WeatherIcons {
-        static let cloudFill = UIImage(systemName: "cloud.fill", withConfiguration: UIImage.SymbolConfiguration(weight: .light))?.withRenderingMode(.alwaysOriginal).withTintColor(.orangeCustom)
+        static let cloudFill = UIImage(systemName: "cloud.fill", withConfiguration: UIImage.SymbolConfiguration(weight: .light))?.withRenderingMode(.alwaysOriginal).withTintColor(.orangeCustom!)
     }
     
     struct Avatars {
@@ -50,7 +50,7 @@ struct UI {
         static let qr = UIImage(named: "qrButton")
         static let filter = UIImage(named: "filterButton")
         static let closeButton = UIImage(named: "closeButton")
-        static let logout = UIImage(systemName: "power", withConfiguration: UIImage.SymbolConfiguration(weight: .bold))?.withRenderingMode(.alwaysOriginal)
+        static let logout = UIImage(systemName: "power", withConfiguration: UIImage.SymbolConfiguration(weight: .bold))?.withRenderingMode(.alwaysTemplate)
     }
     
     struct ServicesIcons {

@@ -20,7 +20,7 @@ final class HeaderView: UIView {
     private lazy var dateDescriptionLabel = UILabel().do {
         $0.text = viewModel.date + " | " + viewModel.dayOfWeek
         $0.font = .with(weight: .regular, size: .subDate)
-        $0.textColor = .grayCustom
+        $0.textColor = .purpleText
     }
     
     private lazy var weatherIcon = UIImageView().do {

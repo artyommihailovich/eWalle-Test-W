@@ -23,14 +23,14 @@ final class ServicesCollectionViewCell: UICollectionViewCell, ViewModelAccepting
         $0.layer.masksToBounds = true
         $0.imageView?.contentMode = .scaleAspectFit
         $0.imageEdgeInsets = UIEdgeInsets(top: 23, left: 23, bottom: 23, right: 23)
-        $0.backgroundColor = .grayBackground
+        $0.backgroundColor = .subBackground
     }
     
     private lazy var titleLabel = UILabel().do {
         $0.font = .with(weight: .regular, size: .small)
         $0.numberOfLines = 2
         $0.textAlignment = .center
-        $0.textColor = .subPurple
+        $0.textColor = .purpleText
     }
     
     private lazy var contentStack = UIStackView().do {
@@ -42,6 +42,7 @@ final class ServicesCollectionViewCell: UICollectionViewCell, ViewModelAccepting
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = .backgroundColor
         setupSubviews()
     }
     

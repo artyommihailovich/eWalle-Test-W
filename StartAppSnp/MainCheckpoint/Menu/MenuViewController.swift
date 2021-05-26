@@ -37,7 +37,7 @@ final class MenuViewController: UIViewController {
     private lazy var cityLabel = UILabel().do {
         $0.text = viewModel.city
         $0.font  = .with(weight: .regular, size: .small)
-        $0.textColor = .grayCustom
+        $0.textColor = .purpleText
     }
     
     private lazy var labelsStack = UIStackView().do {
@@ -56,12 +56,13 @@ final class MenuViewController: UIViewController {
     
     private lazy var closeButton = UIButton().do {
         $0.setImage(UI.ButtonIcons.closeButton, for: .normal)
+        $0.setImageTintColor(.purpleWhite!)
         $0.contentEdgeInsets = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
         $0.addTarget(self, action: #selector(closeButtonDidTap), for: .touchUpInside)
     }
     
     private lazy var viewWithStack = UIView().do {
-        $0.backgroundColor = .white
+        $0.backgroundColor = .backgroundColor
         $0.clipsToBounds = true
         $0.layer.cornerRadius = 53
         $0.layer.maskedCorners = [.layerMaxXMaxYCorner]
@@ -70,13 +71,14 @@ final class MenuViewController: UIViewController {
     private lazy var versionLabel = UILabel().do {
         $0.text = viewModel.version
         $0.textAlignment = .left
-        $0.textColor = .subPurple
+        $0.textColor = .purpleText
         $0.font = .with(weight: .thin, size: .small)
     }
     
     private lazy var logoutButton = UIButton().do {
         $0.setTitle(" Logout", for: .normal)
-        $0.setTitleColor(.black, for: .normal)
+        $0.setTitleColor(.blackWhite, for: .normal)
+        $0.setImageTintColor(.blackWhite!)
         $0.titleLabel?.font = .with(weight: .bold, size: .button)
         $0.setImage(UI.ButtonIcons.logout, for: .normal)
     }
@@ -103,7 +105,7 @@ final class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSubviews()
-        view.backgroundColor = .grayBackground
+        view.backgroundColor = .subBackground
     }
     
     private func setupSubviews() {

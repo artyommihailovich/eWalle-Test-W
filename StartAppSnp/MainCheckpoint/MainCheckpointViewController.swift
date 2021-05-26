@@ -34,6 +34,7 @@ final class MainCheckpointViewController: UIViewController {
     
     private lazy var menuButton = UIButton().do {
         $0.setImage(UI.ButtonIcons.menu, for: .normal)
+        $0.setImageTintColor(.purpleText!)
         $0.contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         $0.addTarget(self, action: #selector(menuButtonTapped), for: .touchUpInside)
     }
@@ -42,6 +43,7 @@ final class MainCheckpointViewController: UIViewController {
         $0.dataSource = self
         $0.rowHeight = UITableView.automaticDimension
         $0.estimatedRowHeight = 300
+        $0.backgroundColor = .backgroundColor
         $0.showsVerticalScrollIndicator = false
         $0.tableFooterView = UIView()
         $0.separatorStyle = .none
@@ -62,6 +64,7 @@ final class MainCheckpointViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+            view.backgroundColor = .backgroundColor
         setupSubviews()
     }
     
@@ -85,7 +88,9 @@ final class MainCheckpointViewController: UIViewController {
     private func setupNavigationBarItems() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: logoStackView)
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: menuButton)
-        navigationItem.rightBarButtonItem?.tintColor = .subPurple
+        navigationItem.rightBarButtonItem?.tintColor = .purpleText
+        navigationController?.navigationBar.barTintColor = .backgroundColor
+        navigationController?.navigationBar.isTranslucent = false
     }
     
     @objc

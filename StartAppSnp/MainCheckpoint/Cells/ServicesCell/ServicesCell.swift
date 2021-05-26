@@ -16,12 +16,13 @@ final class ServicesCell: UITableViewCell, ViewModelAcceptingTableViewCell {
     
     private lazy var titleLabel = UILabel().do {
         $0.text = "Services"
-        $0.textColor = .blueCustom
+        $0.textColor = .purpleText
         $0.font = .with(weight: .bold, size: .subTitle)
     }
     
     private lazy var button = UIButton().do {
         $0.setImage(UI.ButtonIcons.filter, for: .normal)
+        $0.setImageTintColor(.purpleText!)
     }
     
     private lazy var titleStack = UIStackView().do {
@@ -38,12 +39,13 @@ final class ServicesCell: UITableViewCell, ViewModelAcceptingTableViewCell {
     
     private lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout).do {
         $0.dataSource = self
-        $0.backgroundColor = .white
+        $0.backgroundColor = .backgroundColor
         $0.register(ServicesCollectionViewCell.self)
     }
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        backgroundColor = .backgroundColor
         setupSubviews()
     }
     
@@ -52,8 +54,7 @@ final class ServicesCell: UITableViewCell, ViewModelAcceptingTableViewCell {
     }
     
     private func setupSubviews() {
-        addSubviews(titleStack,
-                    collectionView)
+        addSubviews(titleStack, collectionView)
         
         titleStack.snp.makeConstraints {
             $0.top.left.right.equalToSuperview().inset(20)

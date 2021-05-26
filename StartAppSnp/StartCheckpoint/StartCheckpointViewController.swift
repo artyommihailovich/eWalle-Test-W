@@ -33,7 +33,7 @@ final class StartCheckpointViewController: UIViewController {
     
     private lazy var createAccountButton = UIButton().do {
         $0.setTitle("Create an account", for: .normal)
-        $0.setTitleColor(.black, for: .normal)
+        $0.setTitleColor(.blackWhite, for: .normal)
         $0.titleLabel?.font = .with(weight: .thin, size: .button)
         $0.addTarget(self, action: #selector(createAccountButtonDidTap), for: .touchUpInside)
     }

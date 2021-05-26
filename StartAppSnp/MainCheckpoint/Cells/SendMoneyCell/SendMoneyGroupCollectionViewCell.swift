@@ -20,18 +20,18 @@ final class SendMoneyGroupCollectionViewCell: UICollectionViewCell, ViewModelAcc
     
     private lazy var nameLabel = UILabel().do {
         $0.font = .with(weight: .thin, size: .text)
-        $0.textColor = .subPurple
+        $0.textColor = .purpleText
     }
     
     private lazy var imageView = UIImageView().do {
         $0.contentMode = .scaleAspectFit
-        $0.backgroundColor = .white
+        $0.backgroundColor = .backgroundColor
     }
 
     private lazy var contentStack = UIStackView().do {
         $0.axis = .vertical
         $0.alignment = .center
-        $0.backgroundColor = .grayBackground
+        $0.backgroundColor = .subBackground
         $0.layer.cornerRadius = 12
         $0.spacing = 12
         $0.layer.masksToBounds = true

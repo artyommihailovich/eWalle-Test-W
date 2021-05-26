@@ -26,6 +26,7 @@
 		A41197282650DEA200091FBC /* UICollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41197272650DEA200091FBC /* UICollectionReusableView.swift */; };
 		A42140B8265A57A900A9A885 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42140B7265A57A900A9A885 /* CurrentWeather.swift */; };
 		A421719C265BAFBE00016A94 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A421719B265BAFBE00016A94 /* MenuTableViewCell.swift */; };
+		A42171A1265E144000016A94 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42171A0265E144000016A94 /* UIButton.swift */; };
 		A428E4562653A7B600873EA1 /* SendMoneyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428E4552653A7B600873EA1 /* SendMoneyCollectionViewCell.swift */; };
 		A428E4582653A7FD00873EA1 /* SendMoneyCollectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428E4572653A7FD00873EA1 /* SendMoneyCollectionCellViewModel.swift */; };
 		A428E45A2653CC0E00873EA1 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428E4592653CC0E00873EA1 /* UIImageView.swift */; };
@@ -99,6 +100,7 @@
 		A41197272650DEA200091FBC /* UICollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionReusableView.swift; sourceTree = "<group>"; };
 		A42140B7265A57A900A9A885 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		A421719B265BAFBE00016A94 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		A42171A0265E144000016A94 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		A428E4552653A7B600873EA1 /* SendMoneyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyCollectionViewCell.swift; sourceTree = "<group>"; };
 		A428E4572653A7FD00873EA1 /* SendMoneyCollectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyCollectionCellViewModel.swift; sourceTree = "<group>"; };
 		A428E4592653CC0E00873EA1 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
@@ -287,9 +289,9 @@
 			isa = PBXGroup;
 			children = (
 				A428E45B2654C51900873EA1 /* ServicesCell.swift */,
+				A428E45D2654C52500873EA1 /* ServicesCellViewModel.swift */,
 				A428E4622655221D00873EA1 /* ServicesCollectionViewCell.swift */,
 				A428E4642655223000873EA1 /* ServicesCollectionViewCellViewModel.swift */,
-				A428E45D2654C52500873EA1 /* ServicesCellViewModel.swift */,
 			);
 			path = ServicesCell;
 			sourceTree = "<group>";
@@ -444,6 +446,7 @@
 				A46E5DD5264B89FA00BFD261 /* UIBarButtonItem.swift */,
 				A4F034D5262982D500536482 /* UIColor.swift */,
 				A428E46626552F1600873EA1 /* UIImage.swift */,
+				A42171A0265E144000016A94 /* UIButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -636,6 +639,7 @@
 				A468557225FF40A000E3D442 /* CellViewModel.swift in Sources */,
 				A483D8EC2656194C00882BE1 /* MenuViewModel.swift in Sources */,
 				A428E45A2653CC0E00873EA1 /* UIImageView.swift in Sources */,
+				A42171A1265E144000016A94 /* UIButton.swift in Sources */,
 				A428E45E2654C52500873EA1 /* ServicesCellViewModel.swift in Sources */,
 				A4119710264FBDCB00091FBC /* MainCheckpointViewController.swift in Sources */,
 				A4F03523262AA3B600536482 /* UIView.swift in Sources */,

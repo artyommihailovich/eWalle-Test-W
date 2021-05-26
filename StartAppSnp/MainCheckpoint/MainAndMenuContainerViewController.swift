@@ -76,8 +76,6 @@ extension MainAndMenuContainerViewController: MainCheckpointViewControllerDelega
         }
     }
 }
-    
-
 
 extension MainAndMenuContainerViewController: MenuViewControllerDelegate {
     func closeButtonDidTap() {

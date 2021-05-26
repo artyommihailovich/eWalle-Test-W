@@ -19,7 +19,7 @@ final class AccountCell: UITableViewCell, ViewModelAcceptingTableViewCell {
     
     private lazy var titleLabel = UILabel().do {
         $0.text = "Account Overview"
-        $0.textColor = .blueCustom
+        $0.textColor = .purpleText
         $0.font = .with(weight: .bold, size: .subTitle)
     }
     
@@ -29,7 +29,7 @@ final class AccountCell: UITableViewCell, ViewModelAcceptingTableViewCell {
     
     private lazy var currentBalanceLabel = UILabel().do {
         $0.text = "Current Balance"
-        $0.textColor = .subPurple
+        $0.textColor = .purpleText
         $0.font = .with(weight: .thin, size: .text)
     }
     
@@ -50,7 +50,7 @@ final class AccountCell: UITableViewCell, ViewModelAcceptingTableViewCell {
     
     private lazy var cardStack = UIStackView().do {
         $0.axis = .horizontal
-        $0.backgroundColor = .grayBackground
+        $0.backgroundColor = .subBackground
         $0.layer.cornerRadius = 12
         $0.layoutMargins = UIEdgeInsets(top: 25, left: 20, bottom: 30, right: 20)
         $0.isLayoutMarginsRelativeArrangement = true
@@ -59,6 +59,7 @@ final class AccountCell: UITableViewCell, ViewModelAcceptingTableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        backgroundColor = .backgroundColor
         setupSubviews()
     }
     

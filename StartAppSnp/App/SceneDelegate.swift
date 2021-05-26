@@ -18,8 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         appCoordinator = AppCoordinator(navigationController: navigationController)
         window = UIWindow(windowScene: scene)
         window?.rootViewController = navigationController
-        window?.backgroundColor = .white
-        window?.overrideUserInterfaceStyle = .light
+        window?.backgroundColor = .backgroundColor
+     //   window?.overrideUserInterfaceStyle = .light
         window?.makeKeyAndVisible()
         
         appCoordinator?.start()

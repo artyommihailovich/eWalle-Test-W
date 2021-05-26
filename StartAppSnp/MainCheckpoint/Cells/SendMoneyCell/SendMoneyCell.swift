@@ -15,12 +15,13 @@ final class SendMoneyCell: UITableViewCell, ViewModelAcceptingTableViewCell {
     
     private lazy var titleLabel = UILabel().do {
         $0.text = "Send Money"
-        $0.textColor = .blueCustom
+        $0.textColor = .purpleText
         $0.font = .with(weight: .bold, size: .subTitle)
     }
     
     private lazy var button = UIButton().do {
         $0.setImage(UI.ButtonIcons.qr, for: .normal)
+        $0.setImageTintColor(.purpleText!)
     }
     
     private lazy var titleStack = UIStackView().do {
@@ -37,7 +38,7 @@ final class SendMoneyCell: UITableViewCell, ViewModelAcceptingTableViewCell {
     
     private lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout).do {
         $0.dataSource = self
-        $0.backgroundColor = .white
+        $0.backgroundColor = .backgroundColor
         $0.showsHorizontalScrollIndicator = false
         $0.register(SendMoneyCollectionViewCell.self)
         $0.register(SendMoneyGroupCollectionViewCell.self)
@@ -45,6 +46,7 @@ final class SendMoneyCell: UITableViewCell, ViewModelAcceptingTableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        backgroundColor = .backgroundColor
         setupSubviews()
     }
     

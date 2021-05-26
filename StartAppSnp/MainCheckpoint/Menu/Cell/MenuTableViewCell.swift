@@ -12,7 +12,7 @@ final class MenuTableViewCell: UITableViewCell {
     
     lazy var itemButton = UIButton().do {
         $0.titleLabel?.font = .with(weight: .regular, size: .button)
-        $0.setTitleColor(.black, for: .normal)
+        $0.setTitleColor(.blackWhite, for: .normal)
         $0.contentHorizontalAlignment = .left
         $0.addTarget(self, action: #selector(itemButtonDidTap), for: .touchUpInside)
     }

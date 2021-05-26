@@ -13,7 +13,7 @@ extension UIImageView {
         self.layer.cornerRadius = radius
         self.layer.masksToBounds = false
         self.layer.borderWidth = 2
-        self.layer.borderColor = UIColor.purpleDetail.cgColor
+        self.layer.borderColor = UIColor.detailPurple?.cgColor
         self.clipsToBounds = true
     }
 }

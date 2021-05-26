@@ -15,7 +15,7 @@ final class SendMoneyCollectionViewCell: UICollectionViewCell, ViewModelAcceptin
     
     private lazy var plusButton = UIButton().do {
         $0.setImage(UI.ButtonIcons.plus, for: .normal)
-        $0.backgroundColor = .white
+        $0.backgroundColor = .backgroundColor
     }
     
     override init(frame: CGRect) {
@@ -29,7 +29,7 @@ final class SendMoneyCollectionViewCell: UICollectionViewCell, ViewModelAcceptin
     
     private func setupSubviews() {
         addSubview(plusButton)
-    
+        
         plusButton.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
