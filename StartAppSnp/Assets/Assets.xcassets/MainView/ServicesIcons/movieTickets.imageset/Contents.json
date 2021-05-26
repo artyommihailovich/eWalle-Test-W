@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "12-13.png",
+      "filename" : "Vector-10.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -17,7 +17,7 @@
       "scale" : "1x"
     },
     {
-      "filename" : "12-14.png",
+      "filename" : "Vector-11.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -28,12 +28,12 @@
           "value" : "dark"
         }
       ],
-      "filename" : "Vector-2.png",
+      "filename" : "Vector-13.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "12-15.png",
+      "filename" : "Vector-12.png",
       "idiom" : "universal",
       "scale" : "3x"
     },
@@ -44,7 +44,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "Vector-3.png",
+      "filename" : "Vector-14.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
